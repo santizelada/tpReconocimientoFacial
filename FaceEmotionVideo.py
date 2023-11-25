@@ -1,7 +1,3 @@
-## Detección de emociones en tiempo real ##
-## SISTEMAS INTELIGENTES ##
-## https://www.youtube.com/channel/UCr_dJOULDvSXMHA1PSHy2rg
-## David Revelo Luna
 
 # Import de librerias
 from tensorflow.keras.applications.imagenet_utils import preprocess_input
@@ -111,7 +107,7 @@ while True:
 
 	cv2.imshow("Frame", frame)
 	if cv2.waitKey(1) & 0xFF == ord('q'):
-		 break
+		break
 
 cv2.destroyAllWindows()
 cam.release()

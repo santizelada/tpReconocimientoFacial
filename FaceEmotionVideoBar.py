@@ -88,7 +88,6 @@ while True:
 
     (locs, preds) = predict_emotion(frame, faceNet, emotionModel)
 
-    # Para cada hallazgo se dibuja en la imagen el bounding box y la clase
     for (box, pred) in zip(locs, preds):
         (Xi, Yi, Xf, Yf) = box
         (angry, disgust, fear, happy, neutral, sad, surprise) = pred
